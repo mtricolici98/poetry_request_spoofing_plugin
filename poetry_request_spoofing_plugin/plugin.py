@@ -20,5 +20,4 @@ def spoof_user_agent(user_agent_value, get_function):
 class SpooferPlugin(ApplicationPlugin):
     def activate(self, *args, **kwargs):
         # Spoofing User agent information with a different header
-        Authenticator.get = spoof_user_agent('curl/7.54.1', Authenticator.get)
-        Authenticator.post = spoof_user_agent('curl/7.54.1', Authenticator.post)
+        Authenticator.request = spoof_user_agent('curl/7.54.1', Authenticator.request)
