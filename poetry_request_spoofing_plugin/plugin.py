@@ -28,5 +28,3 @@ class SpooferPlugin(ApplicationPlugin):
             io.write_line(
                 "<debug>Loading environment variables.</debug>"
             )
-
-        load_dotenv()
